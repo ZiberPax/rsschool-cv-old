@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button {
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background-color: rgb(86, 95, 80);
+        }
+    </style>
+</head>
+<body style="background-color:black;">
+    <button class="button"></button>
+    <audio autobuffer controls class="audio">
+        <source src="https://pub0201.101.ru/stream/pro/aac/64/358?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJrZXkiOiIzZmUwM2Y5ZDdjMWY3ZDg0NzY1YjlmOTEzOWQ1Y2EzOCIsIklQIjoiMzEuMTgwLjE0MS4yMDMiLCJVQSI6Ik1vemlsbGFcLzUuMCAoV2luZG93cyBOVCAxMC4wOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdFwvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lXC8xMDcuMC4wLjAgU2FmYXJpXC81MzcuMzYiLCJSZWYiOiJodHRwczpcL1wvMTAxLnJ1XC8iLCJ1aWRfY2hhbm5lbCI6IjM1OCIsInR5cGVfY2hhbm5lbCI6ImNoYW5uZWwiLCJ0eXBlRGV2aWNlIjoiUEMiLCJCcm93c2VyIjoiQ2hyb21lIiwiQnJvd3NlclZlcnNpb24iOiIxMDcuMC4wLjAiLCJTeXN0ZW0iOiJXaW5kb3dzIDEwIiwiZXhwIjoxNjY4MzA3MjE5fQ.tNZ_5NyXxmVHqQwfJ1kpM3_gFLfwUlb2ODYZy8VazEE">
+    </audio>
+    <script>
+        document.querySelector(".button").addEventListener("click", function (event) {
+            alert('ТЫ КЛИКНУЛ!!!')
+        }  )
+        // name = prompt("Введите ваше имя", "Иван");
+        // last_name = prompt("Введите вашу фамилию", "Иванов");
+        // patronymic = prompt("Введите ваше отчетсво", "Иванович");
+        // alert("Привет " + name + " " + patronymic + " " + last_name + "!");
+        // type = prompt("Введите вид животного:");
+        // if (type == "Собака") {
+        //     alert("Мясо");
+        //     alert("Корм");
+        // } else if (type == "Корова") {
+        //     alert("Трава");
+        // } else if (type == "Курица") {
+        //     alert("Зерно")
+        // } else {
+        //     alert("Неизвестно, что едят такие животные")
+        // }
+        //  op1 = prompt("Введите операнд 1:");
+        //  op2 = prompt("Введите операнд 2:");
+        //  if (op1 == op2) {
+        //     alert("Операнды равны");
+        //  } else if (op1 > op2) {
+        //     alert("Операнд 1 больше операнда 2");
+        //  } else if (op1 < op2) {
+        //     alert("Операнд 1 меньше операнда 2");
+        //  }
+        // let animals = ["кошка", "собака", "кит"]
+        // animals.push("лошадь")
+        // animals.unshift("гусь")
+        // animals.pop()
+        // animals.shift()
+        // let index = animals.indexOf("собака")
+        // alert("Список" + animals + "\n собака " + index + " номер в списке")
+
+
+
+
+
+
+
+
+
+
+
+        // !!! В программе задан изначальный массив имен животных из двух элементов: «Кошка» и «Собака». Программа должна запросить у пользователя название животного (использовать команду prompt, изученную на первом уроке) для добавления и добавить это название в конец массива (push). Нужно вывести этот массив.
+            //<body style="background-color:black;">
+        // let animals = ["Кошка", "Собака"]
+        // let newElement = prompt("Введите название животного")
+        // animals.push(newElement)
+        // alert("Массив после изменения: " + animals)
+        // let newElement2 = prompt("Введите название животного для добавления в начало")
+        // animals.unshift(newElement2)
+        // alert("Массив после изменения: " + animals)
+        // let elementForDelete = prompt("Введите номер животного для удаление его из массива")
+        // animals.splice(elementForDelete - 1, 1)
+        // alert("Массив после изменения: " + animals)
+        // animals.shift()
+        // alert("Массив после изменения: " + animals)
+
+
+        // let num = prompt('Введите число элементов массива:');
+        // let arr = [];
+
+        // for (let i = 0; i < num; i++) {
+        //     arr.push(prompt('Введите ' + Number(i + 1) + ' элемент: '));
+        // }
+
+        // alert('Массив: ' + arr);
+        
+         //Программа должна запросить у пользователя номер животного для удаления и удалить животное с этим номером из массива (номер при счете человеком, начинается с единицы). Вывести на экран полученный массив. Затем программа должна удалить первый элемент массива из списка. Вывести на экран полученный массив.
+        // let animals = ["Кошка", "Собака", "Корова", "Лошадь", "Овца"]
+        // alert("Исходный список: " + animals )
+        // alert(animals.splice(2, 3))
+        // alert("Список после изменений: " + animals)
+    </script>
+</body>
+</html> 
