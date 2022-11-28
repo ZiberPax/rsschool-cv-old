@@ -4,26 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>LO-FI RADIO</title>
+    <link rel="shortcut icon" href="./38484-ff9800.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
     <style>
         body {
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
             height: 100vh;
             background-color: rgb(84, 46, 46) !important;
             overflow-y: hidden;
+            background-image: url(./the-end-of-the-world-4k-72-3840x2400.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: 0.3s;
         }
 
         .button {
             width: 400px;
             height: 400px;
             border-radius: 50%;
-            background-color: rgb(86, 95, 80);
+            background-color: rgba(92, 36, 87, 0.9);
         
             display: flex; /* df */
             justify-content: center; /* jcc */  
             align-items: center; /* aic */ 
+            transition: 0.3s;
         }
 
         .button:hover {
@@ -31,7 +42,8 @@
         }
 
         .button.active {
-            background-color: rgb(71, 54, 100);
+            background-color: rgba(14, 126, 160, 0.9);
+            transition: 0.3s;
         }
 
         .play {
@@ -40,8 +52,10 @@
             margin-left: 70px;
 
             border-top: 100px solid transparent;
-            border-left: 200px solid grey;
+            border-left: 200px solid rgba(92, 36, 87, 0.9);
             border-bottom: 100px solid transparent;
+            transition: 0.3s;
+            
             /* background-color: red; */
             /* display: none;  */           /*БЫЛО ЗДЕСЬ */
 
@@ -50,11 +64,12 @@
         .pause {
             height: 200px;
             width: 50px;
-            background-color: rgb(114, 58, 168);
+            background-color: rgba(37, 119, 157, 0.9);
 
             position: relative;
             margin-left: 100px;
             display: none;                  /* ПОЯВИЛОСЬ ТУТ */
+            transition: 0.3s;
         }
 
         .pause::before {
@@ -64,13 +79,29 @@
             content: '';
             height: 200px;
             width: 50px;
-            background-color: rgb(114, 58, 168);
+            background-color: rgba(37, 119, 157, 0.9);
+            transition: 0.3s;
+        }
+
+        h1 {
+            font-size: 3em;
+            font-family: 'Kalam', cursive;
+            font-weight: 700;
+            color: rgb(255, 64, 6);
+
+        }
+
+        @media (max-width: 400px) {
+            .button {
+            width: 300px;
+            height: 300px;
+            }
         }
 
     </style>    
 </head>
 <body>
-
+    <h1>LO-FI RADIO</h1>
     <button class="button active">
         <div class="play"></div>
         <div class="pause"></div>
