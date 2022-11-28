@@ -15,13 +15,19 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
+
+            position: relative;
+
             height: 100vh;
+
             background-color: rgb(84, 46, 46) !important;
             overflow-y: hidden;
+
             background-image: url(https://github.com/ZiberPax/rsschool-cv/blob/gh-pages/%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9%20JavaScript/the-end-of-the-world-4k-72-3840x2400.jpg?raw=true);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+
             transition: 0.3s;
         }
 
@@ -91,6 +97,21 @@
 
         }
 
+        input[type="range"] {
+            -webkit-appearance: slider-vertical;
+            position: absolute;
+
+            width: 30px !important;
+            right: 10px;
+            top: 10px;
+            color: aqua;
+        }
+
+        input[type=range]::-webkit-slider-thumb {
+            background: #800e0e !important;
+
+        }
+
         @media (max-width: 400px) {
             .button {
             width: 300px;
@@ -101,6 +122,7 @@
     </style>    
 </head>
 <body>
+    <input type="range" class="slider" min="0" max="10" value="7" step="1">
     <h1>LO-FI RADIO</h1>
     <button class="button active">
         <div class="play"></div>
@@ -131,6 +153,16 @@
                 pause.style.display = "none";
             }
         });
+
+        const volumeslider = document.querySelector(".slider")
+
+        volumeslider.addEventListener("change", setvolume);
+
+        function setvolume(){
+	        audio.volume = volumeslider.value / 100;
+        }
+
+        setvolume()
 
 
 
